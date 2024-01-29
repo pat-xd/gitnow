@@ -46,7 +46,7 @@ function state -d "Gitnow: Show the working tree status in compact way"
     end
 
     command git status -sb
-    if [ "$theme_newline_cursor" = "yes"]
+    if [ "$theme_newline_cursor" = "yes" ]
         echo ""
     end
 end
@@ -176,7 +176,7 @@ function pull -d "Gitnow: Pull changes from remote server but stashing uncommitt
     end
 
     command git pull $xcmd $xdefaults
-    if [ "$theme_newline_cursor" = "yes"]
+    if [ "$theme_newline_cursor" = "yes" ]
         echo ""
     end
 end
@@ -233,7 +233,7 @@ function push -d "Gitnow: Push commit changes to remote repository" -w 'git push
     echo
 
     command git push --set-upstream $opts
-    if [ "$theme_newline_cursor" = "yes"]
+    if [ "$theme_newline_cursor" = "yes" ]
         echo ""
     end
 end
